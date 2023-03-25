@@ -1,0 +1,20 @@
+.btn {
+	&.disabled, &:disabled {
+		opacity: 0.3;
+	}
+}
+
+.form-label-style {
+	&-1 {
+		label {
+			@extend .text-sm-right;
+			@extend .text-left;
+		}
+	}
+}
+
+.right {
+	&-5 {
+		right: 5px;
+	}
+}

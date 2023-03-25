@@ -1,0 +1,78 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,600,700|Nunito&display=swap');
+
+// Variables
+@import 'variables';
+
+// Admin Lte
+@import '~admin-lte/build/scss/AdminLTE';
+
+// Select2 Bootstrap Theme
+@import '~@ttskch/select2-bootstrap4-theme/src/layout';
+
+//ladda
+@import '~ladda/dist/ladda-themeless.min.css';
+
+@import 'elements';
+
+.small-box {
+	& > &-footer {
+		&.stretched-link {
+			@extend .position-static;
+		}
+	}
+}
+
+.card-header {
+	.nav-pills {
+		.nav-item {
+			> .btn {
+				@extend .ml-2;
+				&:not(.btn-default) {
+					@extend .text-white;
+				}
+				&.btn-default {
+					color: $black;
+				}
+			}
+		}
+	}
+}
+
+/*
+ *
+ * Datatable
+ *
+*/
+.table-layout-fixed { table-layout: fixed; }
+.table {
+	&-f-small { font-size: 0.85rem; }
+	&-f-xsmall { font-size: 0.8rem; }
+}
+
+.btn-remove-form-row {
+	font-size: 0.8rem;
+	padding: 0.1rem 0.5rem;
+}
+
+.select2 {
+	&-container {
+		@extend .d-inline-block;
+	}
+}
+.col-status {
+	&:before {
+		width: 12px;
+	    height: 12px;
+	    margin-right: 4px;
+	    border-radius: 6px;
+	    content: "";
+	    display: inline-block;
+	}
+	&-active:before {
+		background-color: $active-color;
+	}
+	&-inactive:before {
+		background-color: $inactive-color;
+	}
+}

@@ -1,0 +1,38 @@
+.font {
+	&-family {
+		&-main {
+			font-family: $font-family-main;
+		}
+	}
+}
+
+.btn {
+	&#{&}-shine {
+		color: $shine-gold;
+		background-color: $black;
+		border-color: $black;
+
+		&:hover {
+			color: $shine-gold;
+			background-color: $shine-gray;
+			border-color: $shine-gray;
+		}
+	}
+}
+
+.bg {
+	&-dark {
+		background-color: $black !important;
+		.navbar {
+			&-brand {
+				color: $shine-gold;
+			}
+		}
+	}
+}
+
+.right {
+	&-5 {
+		right: 5px;
+	}
+}
