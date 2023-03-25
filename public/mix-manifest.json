@@ -1,0 +1,8 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/toastr.css": "/css/toastr.css",
+    "/css/backend/app.css": "/css/backend/app.css",
+    "/js/backend/app.js": "/js/backend/app.js",
+    "/js/backend/my-dt-func.js": "/js/backend/my-dt-func.js"
+}
